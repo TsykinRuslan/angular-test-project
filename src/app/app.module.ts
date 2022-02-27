@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
+import { SpyDirective } from './spy.directive';
 
 @NgModule({
   imports: [
@@ -32,7 +33,8 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    SpyDirective
   ],
   bootstrap: [
     AppComponent

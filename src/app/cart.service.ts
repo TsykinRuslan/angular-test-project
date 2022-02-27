@@ -2,9 +2,20 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Product } from './products';
 
+
+//import { Component } from '@angular/core';
+import { LoggerService } from './logger.service';
+
 @Injectable({
   providedIn: 'root'
 })
+
+//@Component({
+  //selector: 'spy-parent',
+ // templateUrl: './spy.component.html',
+ // providers:  [LoggerService]
+//})
+
 export class CartService {
   items: Product[] = [];
 
@@ -25,6 +36,7 @@ export class CartService {
   }
   
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    public logger: LoggerService
   ) { }
 }
